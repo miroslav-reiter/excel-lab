@@ -6,7 +6,7 @@ Precvičíme automatické filtre, textové a číselné podmienky a viacúrovňo
 
 ## Zdrojové dáta
 
-Použijeme `data/sales.csv`.
+Použijeme `dáta/predaj.csv`.
 
 ## Zadania
 

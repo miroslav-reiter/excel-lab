@@ -6,7 +6,7 @@ Vytvoríme dochádzkový prehľad s výpočtom odpracovaného času.
 
 ## Zdrojové dáta
 
-Použijeme `../../data/attendance.csv`.
+Použijeme `../../dáta/dochádzka.csv`.
 
 ## Požiadavky
 

@@ -6,7 +6,7 @@ Precvičíme vyhľadávanie údajov, `VLOOKUP`, `INDEX`, `MATCH`, `SUMPRODUCT`, 
 
 ## Zdrojové dáta
 
-Použijeme `data/lookup-products.csv`, `data/sales.csv` a `data/budget.csv`.
+Použijeme `dáta/vyhľadávanie-produktov.csv`, `dáta/predaj.csv` a `dáta/rozpočet.csv`.
 
 ## Zadania
 
@@ -28,4 +28,4 @@ Použijeme `data/lookup-products.csv`, `data/sales.csv` a `data/budget.csv`.
 
 ## Riešenie
 
-Pozri `solutions/excel-03-advanced.xlsx`.
+Pozri `riešenia/excel-03-pokročilý.xlsx`.

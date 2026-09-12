@@ -6,7 +6,7 @@ Precvičíme relatívne, absolútne a zmiešané odkazy spolu so základnými fu
 
 ## Zdrojové dáta
 
-Použijeme `data/invoices.csv`.
+Použijeme `dáta/faktúry.csv`.
 
 ## Zadania
 

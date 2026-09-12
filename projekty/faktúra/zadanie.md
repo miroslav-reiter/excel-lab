@@ -6,7 +6,7 @@ Vytvoríme praktickú faktúru s automatickými výpočtami a tlačovým výstup
 
 ## Zdrojové dáta
 
-Použijeme `../../data/invoices.csv` a `../../data/products.csv`.
+Použijeme `../../dáta/faktúry.csv` a `../../dáta/produkty.csv`.
 
 ## Požiadavky
 

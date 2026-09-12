@@ -6,7 +6,7 @@ Vytvoríme kontingenčný prehľad zo zdrojových obchodných dát.
 
 ## Zdrojové dáta
 
-Použijeme `data/sales.csv` alebo hárok `Zdroj kontingenčnej tabuľky` zo súboru `solutions/excel-03-advanced.xlsx`.
+Použijeme `dáta/predaj.csv` alebo hárok `Zdroj kontingenčnej tabuľky` zo súboru `riešenia/excel-03-pokročilý.xlsx`.
 
 ## Zadania
 

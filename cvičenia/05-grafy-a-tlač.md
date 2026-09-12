@@ -6,7 +6,7 @@ Vytvoríme manažérsky graf predaja a pripravíme prehľad na tlač.
 
 ## Zdrojové dáta
 
-Použijeme `data/sales.csv`.
+Použijeme `dáta/predaj.csv`.
 
 ## Zadania
 

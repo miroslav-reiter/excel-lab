@@ -6,7 +6,7 @@ Porovnáme plánovaný rozpočet so skutočnými nákladmi podľa oddelení.
 
 ## Zdrojové dáta
 
-Použijeme `../../data/budget.csv`.
+Použijeme `../../dáta/rozpočet.csv`.
 
 ## Požiadavky
 

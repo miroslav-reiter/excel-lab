@@ -6,11 +6,11 @@ Precvičíme orientáciu v zošite, bunkách, hárkoch a základné výpočty.
 
 ## Zdrojové dáta
 
-Použijeme `data/sales.csv`.
+Použijeme `dáta/predaj.csv`.
 
 ## Zadania
 
-1. Importujeme `sales.csv` do nového zošita
+1. Importujeme `predaj.csv` do nového zošita
 2. Premenujeme hárok na `Predaj`
 3. Vytvoríme nový stĺpec `Tržba`
 4. Do prvého dátového riadka zadáme vzorec `=E2*F2`
@@ -29,4 +29,4 @@ Použijeme `data/sales.csv`.
 
 ## Riešenie
 
-Pozri `solutions/excel-01-basics.xlsx`.
+Pozri `riešenia/excel-01-začiatočník.xlsx`.

@@ -6,7 +6,7 @@ Precvičíme excelové tabuľky, formáty čísel, podmienené formátovanie a p
 
 ## Zdrojové dáta
 
-Použijeme `data/employees.csv` a `data/products.csv`.
+Použijeme `dáta/zamestnanci.csv` a `dáta/produkty.csv`.
 
 ## Zadania
 
