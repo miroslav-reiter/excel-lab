@@ -6,7 +6,7 @@ Vytvoríme manažérsky graf predaja a pripravíme prehľad na tlač.
 
 ## Zdrojové dáta
 
-Použijeme `dáta/predaj.csv`.
+Použijeme `data/predaj.csv`.
 
 ## Zadania
 
@@ -20,9 +20,3 @@ Použijeme `dáta/predaj.csv`.
 8. Nastavíme orientáciu tlače na šírku
 9. Nastavíme tlačovú oblasť
 10. Prispôsobíme prehľad na jednu stranu na šírku
-
-## Kontrola
-
-1. Graf musí odkazovať na súhrnné dáta
-2. Osi musia používať správne číselné formáty
-3. Náhľad tlače nesmie odrezávať stĺpce

@@ -6,7 +6,7 @@ Precvičíme excelové tabuľky, formáty čísel, podmienené formátovanie a p
 
 ## Zdrojové dáta
 
-Použijeme `dáta/zamestnanci.csv` a `dáta/produkty.csv`.
+Použijeme `data/zamestnanci.csv` a `data/produkty.csv`.
 
 ## Zadania
 
@@ -20,9 +20,3 @@ Použijeme `dáta/zamestnanci.csv` a `dáta/produkty.csv`.
 8. Overíme duplicity v stĺpci `E-mail`
 9. Nastavíme automatickú šírku stĺpcov
 10. Zafixujeme horný riadok pri rolovaní
-
-## Kontrola
-
-1. Obe dátové oblasti musia byť excelové tabuľky
-2. Číselné formáty musia zodpovedať typu údajov
-3. Podmienené formátovanie musí reagovať na zmenu hodnoty

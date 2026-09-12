@@ -6,7 +6,7 @@ Precvičíme automatické filtre, textové a číselné podmienky a viacúrovňo
 
 ## Zdrojové dáta
 
-Použijeme `dáta/predaj.csv`.
+Použijeme `data/predaj.csv`.
 
 ## Zadania
 
@@ -18,9 +18,3 @@ Použijeme `dáta/predaj.csv`.
 6. Vyfiltrujeme predaje od marca do júna 2026
 7. Skopírujeme iba viditeľné riadky do nového hárka `Filtrované`
 8. Obnovíme pôvodné zobrazenie bez odstránenia dát
-
-## Kontrola
-
-1. Zdrojové dáta musia zostať kompletné
-2. Triedenie musí pracovať s celými riadkami
-3. Pri kopírovaní musia byť použité iba viditeľné bunky

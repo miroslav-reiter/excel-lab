@@ -6,7 +6,7 @@ Precvičíme relatívne, absolútne a zmiešané odkazy spolu so základnými fu
 
 ## Zdrojové dáta
 
-Použijeme `dáta/faktúry.csv`.
+Použijeme `data/faktury.csv`.
 
 ## Zadania
 
@@ -20,9 +20,3 @@ Použijeme `dáta/faktúry.csv`.
 8. Vypočítame priemernú hodnotu faktúry
 9. Zistíme počet faktúr so stavom `Uhradená` pomocou funkcie `COUNTIF`
 10. Zistíme sumu otvorených faktúr pomocou funkcie `SUMIF`
-
-## Kontrola
-
-1. Sadzba DPH musí byť uložená v samostatnej bunke
-2. Vzorec pre DPH musí používať absolútny odkaz
-3. Súhrn nesmie byť vypočítaný ručným prepisovaním hodnôt

@@ -6,7 +6,7 @@ Precvičíme orientáciu v zošite, bunkách, hárkoch a základné výpočty.
 
 ## Zdrojové dáta
 
-Použijeme `dáta/predaj.csv`.
+Použijeme `data/predaj.csv`.
 
 ## Zadania
 
@@ -29,4 +29,4 @@ Použijeme `dáta/predaj.csv`.
 
 ## Riešenie
 
-Pozri `riešenia/excel-01-začiatočník.xlsx`.
+Pozri `riesenia/excel-01-zaciatocnik.xlsx`.

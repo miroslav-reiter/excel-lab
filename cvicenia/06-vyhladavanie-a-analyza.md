@@ -6,7 +6,7 @@ Precvičíme vyhľadávanie údajov, `VLOOKUP`, `INDEX`, `MATCH`, `SUMPRODUCT`, 
 
 ## Zdrojové dáta
 
-Použijeme `dáta/vyhľadávanie-produktov.csv`, `dáta/predaj.csv` a `dáta/rozpočet.csv`.
+Použijeme `data/vyhladavanie-produktov.csv`, `data/predaj.csv` a `data/rozpocet.csv`.
 
 ## Zadania
 
@@ -20,12 +20,6 @@ Použijeme `dáta/vyhľadávanie-produktov.csv`, `dáta/predaj.csv` a `dáta/roz
 8. Porovnáme presné a približné vyhľadávanie
 9. Skontrolujeme, či sú rozsahy správne fixované
 
-## Kontrola
-
-1. Vyhľadávacie vzorce nesmú obsahovať ručne prepísané výsledky
-2. Pri presnom vyhľadávaní musí byť použitý správny režim zhody
-3. Chybové stavy musia byť ošetrené zrozumiteľne
-
 ## Riešenie
 
-Pozri `riešenia/excel-03-pokročilý.xlsx`.
+Pozri `riesenia/excel-03-pokrocily.xlsx`.

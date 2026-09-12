@@ -6,7 +6,7 @@ Vytvoríme analytický model absencií a dochádzky pre personálne prehľady.
 
 ## Zdrojové dáta
 
-Použijeme `../../dáta/zamestnanci.csv` a `../../dáta/dochádzka.csv`.
+Použijeme `../../data/zamestnanci.csv` a `../../data/dochadzka.csv`.
 
 ## Požiadavky
 

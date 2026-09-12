@@ -6,7 +6,7 @@ Vytvoríme kontingenčný prehľad zo zdrojových obchodných dát.
 
 ## Zdrojové dáta
 
-Použijeme `dáta/predaj.csv` alebo hárok `Zdroj kontingenčnej tabuľky` zo súboru `riešenia/excel-03-pokročilý.xlsx`.
+Použijeme `data/predaj.csv` alebo hárok `Zdroj kontingenčnej tabuľky` zo súboru `riesenia/excel-03-pokrocily.xlsx`.
 
 ## Zadania
 
@@ -20,9 +20,3 @@ Použijeme `dáta/predaj.csv` alebo hárok `Zdroj kontingenčnej tabuľky` zo s�
 8. Vytvoríme druhú hodnotu ako percento z celku
 9. Zoradíme regióny podľa celkovej tržby zostupne
 10. Po zmene zdrojových dát použijeme príkaz Obnoviť
-
-## Kontrola
-
-1. Zdroj kontingenčnej tabuľky musí byť dynamický alebo založený na excelovej tabuľke
-2. Tržby musia byť agregované ako čísla
-3. Prehľad musí byť čitateľný bez manuálneho prepisovania výsledkov

@@ -6,7 +6,7 @@ Vytvoríme dochádzkový prehľad s výpočtom odpracovaného času.
 
 ## Zdrojové dáta
 
-Použijeme `../../dáta/dochádzka.csv`.
+Použijeme `../../data/dochadzka.csv`.
 
 ## Požiadavky
 

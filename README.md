@@ -9,9 +9,7 @@ Repozitár nadväzuje na štyri online kurzy VITA Academy:
 3. [Microsoft Excel III. Pokročilý](https://www.vita.sk/online-kurz-microsoft-excel-iii-pokrocily/)
 4. [Microsoft Excel IV. Expert: Programovanie vo VBA](https://www.vita.sk/online-kurz-microsoft-excel-iv-expert-programovanie-vo-vba/)
 
-Cieľom repozitára je precvičiť prácu s bunkami, tabuľkami, formátovaním, vzorcami, funkciami, filtrami, grafmi, veľkými dátami, kontingenčnými tabuľkami, importom dát, makrami a objektovým modelom Microsoft Excelu na realistických firemných príkladoch.
-
-> **Poznámka k vzorcom:** technické názvy funkcií ako `SUM`, `AVERAGE`, `VLOOKUP`, `INDEX`, `MATCH` alebo `SUMPRODUCT` uvádzame v medzinárodnom anglickom tvare. Podľa jazykového a regionálneho nastavenia Excelu môže byť oddeľovač argumentov `,` alebo `;`.
+> **Pravidlo názvov súborov a priečinkov:** názvy v repozitári sú po slovensky, ale zapisujeme ich bez diakritiky a bez medzier. Technické názvy funkcií a objektov Excel/VBA zostávajú v originálnom tvare.
 
 ## 📑 Obsah
 
@@ -44,7 +42,7 @@ Cieľom repozitára je precvičiť prácu s bunkami, tabuľkami, formátovaním,
    3. [VLOOKUP](#excel-iii-24)
    4. [HLOOKUP](#excel-iii-25)
    5. [MATCH a INDEX](#excel-iii-26)
-   6. [XLOOKUP ako moderná alternatíva](#excel-iii-27)
+   6. [XLOOKUP](#excel-iii-27)
    7. [CHOOSE](#excel-iii-28)
    8. [Hľadanie riešenia](#excel-iii-29)
    9. [SUMPRODUCT](#excel-iii-30)
@@ -79,9 +77,6 @@ Cieľom repozitára je precvičiť prácu s bunkami, tabuľkami, formátovaním,
    20. [Ovládacie tlačidlo](#excel-iv-58)
 5. [Praktické súbory repozitára](#prakticke-subory)
 6. [Praktické projekty](#prakticke-projekty)
-7. [Excel ťahák](#excel-tahak)
-8. [Časté chyby](#caste-chyby)
-9. [Bezpečnostné poznámky](#bezpecnost)
 
 <a id="prakticke-subory"></a>
 ## 🗂️ Praktické súbory repozitára
@@ -89,97 +84,85 @@ Cieľom repozitára je precvičiť prácu s bunkami, tabuľkami, formátovaním,
 ```text
 excel-lab/
 ├── README.md
-├── dáta/
+├── data/
 │   ├── zamestnanci.csv
 │   ├── predaj.csv
-│   ├── faktúry.csv
-│   ├── dochádzka.csv
-│   ├── rozpočet.csv
+│   ├── faktury.csv
+│   ├── dochadzka.csv
+│   ├── rozpocet.csv
 │   ├── produkty.csv
-│   └── vyhľadávanie-produktov.csv
-├── cvičenia/
-│   ├── 01-základy-excelu.md
-│   ├── 02-tabuľky-a-formátovanie.md
+│   └── vyhladavanie-produktov.csv
+├── cvicenia/
+│   ├── 01-zaklady-excelu.md
+│   ├── 02-tabulky-a-formatovanie.md
 │   ├── 03-vzorce-a-funkcie.md
 │   ├── 04-filtrovanie-a-triedenie.md
-│   ├── 05-grafy-a-tlač.md
-│   ├── 06-vyhľadávanie-a-analýza.md
-│   ├── 07-kontingenčné-tabuľky.md
-│   └── 08-vba-automatizácia.md
-├── riešenia/
-│   ├── excel-01-začiatočník.xlsx
-│   ├── excel-02-mierne-pokročilý.xlsx
-│   ├── excel-03-pokročilý.xlsx
+│   ├── 05-grafy-a-tlac.md
+│   ├── 06-vyhladavanie-a-analyza.md
+│   ├── 07-kontingencne-tabulky.md
+│   └── 08-vba-automatizacia.md
+├── riesenia/
+│   ├── excel-01-zaciatocnik.xlsx
+│   ├── excel-02-mierne-pokrocily.xlsx
+│   ├── excel-03-pokrocily.xlsx
 │   └── excel-04-expert-vba.xlsm
-├── vba-ukážky/
-│   ├── 01-prvé-makro.bas
+├── vba-ukazky/
+│   ├── 01-prve-makro.bas
 │   ├── 02-rozsahy-a-bunky.bas
-│   ├── 03-hárky.bas
+│   ├── 03-harky.bas
 │   ├── 04-podmienky-a-cykly.bas
-│   ├── 05-používateľská-funkcia.bas
-│   └── 06-automatizácia-prehľadu.bas
+│   ├── 05-pouzivatelska-funkcia.bas
+│   └── 06-automatizacia-prehladu.bas
 └── projekty/
-    ├── faktúra/zadanie.md
-    ├── dochádzka/zadanie.md
-    ├── rozpočet/zadanie.md
-    ├── prehľad-predaja/zadanie.md
+    ├── faktura/zadanie.md
+    ├── dochadzka/zadanie.md
+    ├── rozpocet/zadanie.md
+    ├── prehlad-predaja/zadanie.md
     └── absencie-zamestnancov/zadanie.md
 ```
 
 ### Dáta
 
-1. [`zamestnanci.csv`](dáta/zamestnanci.csv) obsahuje zamestnancov, oddelenia, pozície, platy a dátumy nástupu
-2. [`predaj.csv`](dáta/predaj.csv) obsahuje obchodné transakcie vhodné na filtrovanie, grafy a kontingenčné tabuľky
-3. [`faktúry.csv`](dáta/faktúry.csv) obsahuje faktúry, dátumy splatnosti a stavy úhrad
-4. [`dochádzka.csv`](dáta/dochádzka.csv) obsahuje príchody, odchody, prestávky a formu práce
-5. [`rozpočet.csv`](dáta/rozpočet.csv) obsahuje plánované a skutočné náklady podľa oddelení
-6. [`produkty.csv`](dáta/produkty.csv) obsahuje produktový katalóg a ceny
-7. [`vyhľadávanie-produktov.csv`](dáta/vyhľadávanie-produktov.csv) slúži na precvičovanie vyhľadávacích funkcií
+1. [`zamestnanci.csv`](data/zamestnanci.csv)
+2. [`predaj.csv`](data/predaj.csv)
+3. [`faktury.csv`](data/faktury.csv)
+4. [`dochadzka.csv`](data/dochadzka.csv)
+5. [`rozpocet.csv`](data/rozpocet.csv)
+6. [`produkty.csv`](data/produkty.csv)
+7. [`vyhladavanie-produktov.csv`](data/vyhladavanie-produktov.csv)
 
 ### Cvičenia
 
-1. [`01-základy-excelu.md`](cvičenia/01-základy-excelu.md)
-2. [`02-tabuľky-a-formátovanie.md`](cvičenia/02-tabuľky-a-formátovanie.md)
-3. [`03-vzorce-a-funkcie.md`](cvičenia/03-vzorce-a-funkcie.md)
-4. [`04-filtrovanie-a-triedenie.md`](cvičenia/04-filtrovanie-a-triedenie.md)
-5. [`05-grafy-a-tlač.md`](cvičenia/05-grafy-a-tlač.md)
-6. [`06-vyhľadávanie-a-analýza.md`](cvičenia/06-vyhľadávanie-a-analýza.md)
-7. [`07-kontingenčné-tabuľky.md`](cvičenia/07-kontingenčné-tabuľky.md)
-8. [`08-vba-automatizácia.md`](cvičenia/08-vba-automatizácia.md)
+1. [`01-zaklady-excelu.md`](cvicenia/01-zaklady-excelu.md)
+2. [`02-tabulky-a-formatovanie.md`](cvicenia/02-tabulky-a-formatovanie.md)
+3. [`03-vzorce-a-funkcie.md`](cvicenia/03-vzorce-a-funkcie.md)
+4. [`04-filtrovanie-a-triedenie.md`](cvicenia/04-filtrovanie-a-triedenie.md)
+5. [`05-grafy-a-tlac.md`](cvicenia/05-grafy-a-tlac.md)
+6. [`06-vyhladavanie-a-analyza.md`](cvicenia/06-vyhladavanie-a-analyza.md)
+7. [`07-kontingencne-tabulky.md`](cvicenia/07-kontingencne-tabulky.md)
+8. [`08-vba-automatizacia.md`](cvicenia/08-vba-automatizacia.md)
 
 ### Riešenia
 
-1. [`excel-01-začiatočník.xlsx`](riešenia/excel-01-začiatočník.xlsx)
-2. [`excel-02-mierne-pokročilý.xlsx`](riešenia/excel-02-mierne-pokročilý.xlsx)
-3. [`excel-03-pokročilý.xlsx`](riešenia/excel-03-pokročilý.xlsx)
-4. [`excel-04-expert-vba.xlsm`](riešenia/excel-04-expert-vba.xlsm)
+1. [`excel-01-zaciatocnik.xlsx`](riesenia/excel-01-zaciatocnik.xlsx)
+2. [`excel-02-mierne-pokrocily.xlsx`](riesenia/excel-02-mierne-pokrocily.xlsx)
+3. [`excel-03-pokrocily.xlsx`](riesenia/excel-03-pokrocily.xlsx)
+4. [`excel-04-expert-vba.xlsm`](riesenia/excel-04-expert-vba.xlsm)
 
 ### VBA ukážky
 
-1. [`01-prvé-makro.bas`](vba-ukážky/01-prvé-makro.bas)
-2. [`02-rozsahy-a-bunky.bas`](vba-ukážky/02-rozsahy-a-bunky.bas)
-3. [`03-hárky.bas`](vba-ukážky/03-hárky.bas)
-4. [`04-podmienky-a-cykly.bas`](vba-ukážky/04-podmienky-a-cykly.bas)
-5. [`05-používateľská-funkcia.bas`](vba-ukážky/05-používateľská-funkcia.bas)
-6. [`06-automatizácia-prehľadu.bas`](vba-ukážky/06-automatizácia-prehľadu.bas)
+1. [`01-prve-makro.bas`](vba-ukazky/01-prve-makro.bas)
+2. [`02-rozsahy-a-bunky.bas`](vba-ukazky/02-rozsahy-a-bunky.bas)
+3. [`03-harky.bas`](vba-ukazky/03-harky.bas)
+4. [`04-podmienky-a-cykly.bas`](vba-ukazky/04-podmienky-a-cykly.bas)
+5. [`05-pouzivatelska-funkcia.bas`](vba-ukazky/05-pouzivatelska-funkcia.bas)
+6. [`06-automatizacia-prehladu.bas`](vba-ukazky/06-automatizacia-prehladu.bas)
 
 <a id="excel-i-zaciatocnik"></a>
 # 🟢 Excel I. Začiatočník
 
-Kurz I. pokrýva používateľské prostredie, pracovné zošity a hárky, prácu s bunkami, tabuľkami, filtrovanie, triedenie, formátovanie, základné vzorce, funkcie, grafy a praktické firemné dokumenty.
-
 <a id="excel-i-01"></a>
 ## 1. Navigácia a práca s bunkami
-
-Príklad tabuľky:
-
-| Produkt | Cena | Množstvo | Tržba |
-|---|---:|---:|---:|
-| Notebook | 850 | 2 | |
-| Monitor | 240 | 4 | |
-| Myš | 35 | 10 | |
-
-Do bunky `D2` zadáme:
 
 ```excel
 =B2*C2
@@ -188,18 +171,9 @@ Do bunky `D2` zadáme:
 <a id="excel-i-02"></a>
 ## 2. Relatívne a absolútne odkazy
 
-Ak je sadzba DPH v bunke `F1`, použijeme:
-
 ```excel
 =D2*$F$1
 ```
-
-| Typ odkazu | Príklad |
-|---|---|
-| Relatívny | `D2` |
-| Absolútny | `$D$2` |
-| Fixovaný riadok | `D$2` |
-| Fixovaný stĺpec | `$D2` |
 
 <a id="excel-i-03"></a>
 ## 3. Základné funkcie
@@ -215,98 +189,65 @@ Ak je sadzba DPH v bunke `F1`, použijeme:
 <a id="excel-i-04"></a>
 ## 4. Excelová tabuľka
 
-Označíme dáta a použijeme `Ctrl + T`. Tabuľku môžeme pomenovať napríklad `tblPredaj`.
-
-```excel
-=[@Cena]*[@Množstvo]
-```
+Použijeme `Ctrl + T` a štruktúrovaný odkaz `=[@Cena]*[@Mnozstvo]`.
 
 <a id="excel-i-05"></a>
 ## 5. Odstránenie duplicít
 
-Použijeme `Dáta > Odstrániť duplicity`. Pred zásahom pracujeme s kópiou zdrojových dát.
+Použijeme `Dáta > Odstrániť duplicity`.
 
 <a id="excel-i-06"></a>
 ## 6. Filtrovanie a triedenie
 
-Na súbore [`predaj.csv`](dáta/predaj.csv) precvičíme:
-
-1. filter podľa regiónu
-2. filter podľa obchodníka
-3. číselný filter podľa tržby
-4. zoradenie podľa tržby zostupne
-5. viacúrovňové zoradenie podľa regiónu, obchodníka a tržby
+Precvičíme textové, číselné a dátumové filtre a viacúrovňové triedenie.
 
 <a id="excel-i-07"></a>
 ## 7. Formáty čísel a percentá
 
-```text
-1250,5       → 1 250,50 €
-0,235        → 23,50 %
-2026-09-12   → 12. 9. 2026
-0,5          → 12:00
-```
+Precvičíme menu EUR, percentá, dátumy a čas.
 
 <a id="excel-i-08"></a>
 ## 8. Podmienené formátovanie
 
-Príklad vlastného pravidla:
-
-```excel
-=$D2>2000
-```
+Zvýrazníme hodnoty podľa pravidiel a hraníc.
 
 <a id="excel-i-09"></a>
 ## 9. Graf predaja
 
-Zo súhrnu mesačných tržieb vytvoríme stĺpcový graf na porovnanie a čiarový graf na sledovanie trendu.
+Vytvoríme stĺpcový graf mesačných tržieb.
 
 <a id="excel-i-10"></a>
 ## 10. Projekt – faktúra
 
-Projektové zadanie: [`projekty/faktúra/zadanie.md`](projekty/faktúra/zadanie.md)
+Zadanie: [`projekty/faktura/zadanie.md`](projekty/faktura/zadanie.md)
 
 <a id="excel-i-11"></a>
 ## 11. Projekt – evidencia dochádzky
 
-Projektové zadanie: [`projekty/dochádzka/zadanie.md`](projekty/dochádzka/zadanie.md)
+Zadanie: [`projekty/dochadzka/zadanie.md`](projekty/dochadzka/zadanie.md)
 
 <a id="excel-ii-mierne-pokrocily"></a>
 # 🟡 Excel II. Mierne Pokročilý
 
-Kurz II. rozvíja efektívnu prácu s prostredím, postupnosťami, vkladaním dát, selekciami, tabuľkami, vlastným triedením, filtrami, grafmi a tlačou.
-
 <a id="excel-ii-12"></a>
 ## 12. Číselné a dátumové postupnosti
 
-Precvičíme postupnosti čísel, dátumov, pracovných dní a vlastných zoznamov.
-
-```excel
-=SEQUENCE(100)
-```
+Precvičíme automatické vypĺňanie čísel, dátumov a vlastných radov.
 
 <a id="excel-ii-13"></a>
 ## 13. Vlastné zoznamy
 
-Príklad vlastného poradia:
-
-```text
-Junior
-Medior
-Senior
-Vedúci
-Manažér
-```
+Vytvoríme vlastné poradie hodnôt pre opakované používanie.
 
 <a id="excel-ii-14"></a>
 ## 14. Efektívne vkladanie dát
 
-Precvičíme `Enter`, `Shift + Enter`, `Tab`, `Shift + Tab`, `Ctrl + Enter` a `Alt + Enter`.
+Precvičíme `Ctrl + Enter`, kopírovanie a prácu s výberom.
 
 <a id="excel-ii-15"></a>
 ## 15. Pokročilá selekcia a Prejsť na
 
-Použijeme `Ctrl + G` alebo `F5` a príkaz Prejsť na špeciálne pre prázdne bunky, vzorce, konštanty a viditeľné bunky.
+Použijeme `Ctrl + G`, `F5` a Prejsť na špeciálne.
 
 <a id="excel-ii-16"></a>
 ## 16. Dátumy a časy
@@ -322,50 +263,40 @@ Použijeme `Ctrl + G` alebo `F5` a príkaz Prejsť na špeciálne pre prázdne b
 <a id="excel-ii-17"></a>
 ## 17. Automatické filtre a zástupné znaky
 
-```text
-*    ľubovoľný počet znakov
-?    jeden ľubovoľný znak
-~    potlačenie špeciálneho významu znaku
-```
+Precvičíme `*` a `?` pri textových filtroch.
 
 <a id="excel-ii-18"></a>
 ## 18. Vlastné zoradenie
 
-Vytvoríme napríklad vlastné poradie priorít `Kritická`, `Vysoká`, `Stredná`, `Nízka`.
+Zoradíme dáta podľa viacerých stĺpcov a vlastného poradia.
 
 <a id="excel-ii-19"></a>
 ## 19. Prilepiť špeciálne
 
-Precvičíme hodnoty, vzorce, formáty, transpozíciu a matematické operácie pri prilepení.
+Precvičíme hodnoty, vzorce, formáty a transpozíciu.
 
 <a id="excel-ii-20"></a>
 ## 20. Pokročilé grafy
 
-Porovnáme stĺpcový, čiarový a koláčový graf a zvolíme typ podľa analytického cieľa.
+Porovnáme stĺpcový, čiarový a koláčový graf.
 
 <a id="excel-ii-21"></a>
 ## 21. Tlač a zlomy strán
 
-Precvičíme oblasť tlače, orientáciu, okraje, mierku, náhľad zlomov strán, hlavičku a pätu.
+Nastavíme orientáciu, tlačovú oblasť a zlomy strán.
 
 <a id="excel-iii-pokrocily"></a>
-# 🟠 Excel III. Pokročilý
-
-Kurz III. sa zameriava na veľké dátové súbory, vyhľadávacie funkcie, Hľadanie riešenia, `SUMPRODUCT`, rozpočty, personálne dáta, kontingenčné tabuľky, importy a informačné funkcie.
+# 🔵 Excel III. Pokročilý
 
 <a id="excel-iii-22"></a>
 ## 22. Limity pracovného hárka
 
-```text
-1 048 576 riadkov
-16 384 stĺpcov
-posledný stĺpec XFD
-```
+Excel podporuje 1 048 576 riadkov a 16 384 stĺpcov.
 
 <a id="excel-iii-23"></a>
 ## 23. Volatilné funkcie
 
-Medzi funkcie, ktoré môžu spôsobovať častejšie prepočítavanie zošita, patria napríklad `NOW`, `TODAY`, `RAND`, `RANDBETWEEN`, `OFFSET` a `INDIRECT`.
+Vysvetlíme dopad funkcií `NOW`, `TODAY`, `RAND`, `OFFSET` a `INDIRECT` na prepočet.
 
 <a id="excel-iii-24"></a>
 ## 24. VLOOKUP
@@ -377,24 +308,19 @@ Medzi funkcie, ktoré môžu spôsobovať častejšie prepočítavanie zošita, 
 <a id="excel-iii-25"></a>
 ## 25. HLOOKUP
 
-```excel
-=HLOOKUP(B1,$B$10:$M$12,3,FALSE)
-```
+Precvičíme horizontálne vyhľadávanie.
 
 <a id="excel-iii-26"></a>
 ## 26. MATCH a INDEX
 
 ```excel
-=MATCH(A2,$H$2:$H$100,0)
-=INDEX($J$2:$J$100,MATCH(A2,$H$2:$H$100,0))
+=INDEX(C2:C100,MATCH(A2,A2:A100,0))
 ```
 
 <a id="excel-iii-27"></a>
-## 27. XLOOKUP ako moderná alternatíva
+## 27. XLOOKUP
 
-```excel
-=XLOOKUP(A2,$H$2:$H$100,$J$2:$J$100,"Nenájdené")
-```
+XLOOKUP uvádzame ako modernú alternatívu pre aktuálne verzie Excelu.
 
 <a id="excel-iii-28"></a>
 ## 28. CHOOSE
@@ -406,7 +332,7 @@ Medzi funkcie, ktoré môžu spôsobovať častejšie prepočítavanie zošita, 
 <a id="excel-iii-29"></a>
 ## 29. Hľadanie riešenia
 
-Použijeme `Dáta > Analýza hypotéz > Hľadanie riešenia` a vypočítame vstupnú hodnotu potrebnú na dosiahnutie cieľového výsledku.
+Použijeme `Dáta > Analýza hypotéz > Hľadanie riešenia`.
 
 <a id="excel-iii-30"></a>
 ## 30. SUMPRODUCT
@@ -425,17 +351,17 @@ Použijeme `Dáta > Analýza hypotéz > Hľadanie riešenia` a vypočítame vstu
 <a id="excel-iii-32"></a>
 ## 32. Projekt – absencie zamestnancov
 
-Projektové zadanie: [`projekty/absencie-zamestnancov/zadanie.md`](projekty/absencie-zamestnancov/zadanie.md)
+Zadanie: [`projekty/absencie-zamestnancov/zadanie.md`](projekty/absencie-zamestnancov/zadanie.md)
 
 <a id="excel-iii-33"></a>
 ## 33. Projekt – firemný rozpočet
 
-Projektové zadanie: [`projekty/rozpočet/zadanie.md`](projekty/rozpočet/zadanie.md)
+Zadanie: [`projekty/rozpocet/zadanie.md`](projekty/rozpocet/zadanie.md)
 
 <a id="excel-iii-34"></a>
 ## 34. Kontingenčná tabuľka
 
-Zo súboru [`predaj.csv`](dáta/predaj.csv) vytvoríme prehľad podľa regiónu, mesiaca a tržby.
+Zdroj: [`data/predaj.csv`](data/predaj.csv)
 
 <a id="excel-iii-35"></a>
 ## 35. Unikátne hodnoty
@@ -447,12 +373,12 @@ Zo súboru [`predaj.csv`](dáta/predaj.csv) vytvoríme prehľad podľa regiónu,
 <a id="excel-iii-36"></a>
 ## 36. Rýchla analýza
 
-Označíme rozsah a použijeme nástroj Rýchla analýza pre formátovanie, grafy, súčty, tabuľky a minigrafy.
+Precvičíme nástroj Rýchla analýza.
 
 <a id="excel-iii-37"></a>
 ## 37. Import CSV
 
-Pri importe sledujeme oddeľovač, kódovanie, desatinný oddeľovač, dátumový formát, dátové typy a vedúce nuly.
+Sledujeme oddeľovač, kódovanie, desatinný oddeľovač, dátumový formát a dátové typy.
 
 <a id="excel-iii-38"></a>
 ## 38. Informačné funkcie
@@ -469,305 +395,125 @@ Pri importe sledujeme oddeľovač, kódovanie, desatinný oddeľovač, dátumov�
 <a id="excel-iv-expert-vba"></a>
 # 🔴 Excel IV. Expert – Programovanie vo VBA
 
-Kurz IV. sa zameriava na automatizáciu, záznam makier, objektový model Excelu, objekty `Range`, `Cells` a `Worksheets`, používateľské funkcie, premenné, podmienky, cykly, ovládacie prvky a optimalizáciu.
-
 <a id="excel-iv-39"></a>
 ## 39. Prvé makro
 
 ```vb
-Option Explicit
-
 Sub AhojExcel()
     MsgBox "Ahoj Excel!"
 End Sub
 ```
 
-Zdroj: [`01-prvé-makro.bas`](vba-ukážky/01-prvé-makro.bas)
+Zdroj: [`01-prve-makro.bas`](vba-ukazky/01-prve-makro.bas)
 
 <a id="excel-iv-40"></a>
 ## 40. Range
 
-```vb
-Sub ZapisDoRozsahu()
-    Worksheets("Dáta").Range("A1").Value = "VITA Academy"
-End Sub
-```
+Precvičíme explicitnú prácu s objektom `Range`.
 
 <a id="excel-iv-41"></a>
 ## 41. Cells
 
-```vb
-Sub ZapisPomocouCells()
-    Worksheets("Dáta").Cells(1, 1).Value = "A1"
-    Worksheets("Dáta").Cells(2, 3).Value = "C2"
-End Sub
-```
+Precvičíme adresovanie `Cells(riadok, stlpec)`.
 
 <a id="excel-iv-42"></a>
 ## 42. Práca s hárkami
 
-```vb
-Sub VytvorHarokPrehlad()
-    Dim harok As Worksheet
-    Set harok = Worksheets.Add
-    harok.Name = "Prehľad"
-End Sub
-```
+Precvičíme `Worksheets.Add`, pomenovanie a počítanie hárkov.
 
 <a id="excel-iv-43"></a>
 ## 43. Automatická šírka a výška
 
-```vb
-With Worksheets("Prehľad")
-    .Columns.AutoFit
-    .Rows.AutoFit
-End With
-```
+Použijeme `Columns.AutoFit` a `Rows.AutoFit`.
 
 <a id="excel-iv-44"></a>
 ## 44. Premenné a Option Explicit
 
-`Option Explicit` vyžaduje deklaráciu premenných a pomáha odhaliť preklepy v názvoch.
+Použijeme explicitnú deklaráciu premenných.
 
 <a id="excel-iv-45"></a>
 ## 45. Podmienka If
 
-```vb
-If trzba >= 10000 Then
-    Range("B1").Value = "Cieľ splnený"
-Else
-    Range("B1").Value = "Cieľ nesplnený"
-End If
-```
+Precvičíme rozhodovanie podľa hodnoty bunky.
 
 <a id="excel-iv-46"></a>
 ## 46. Cyklus For
 
-```vb
-For i = 2 To 101
-    Cells(i, 1).Value = i - 1
-Next i
-```
+Precvičíme opakovanie nad číslovanými riadkami.
 
 <a id="excel-iv-47"></a>
 ## 47. For Step
 
-```vb
-For i = 2 To 100 Step 2
-    Cells(i, 1).Value = "Párny riadok"
-Next i
-```
+Precvičíme zmenu kroku cyklu.
 
 <a id="excel-iv-48"></a>
 ## 48. For Each
 
-```vb
-For Each bunka In Range("D2:D100")
-    If IsNumeric(bunka.Value) And bunka.Value < 0 Then
-        bunka.Font.Bold = True
-    End If
-Next bunka
-```
+Precvičíme prechod cez bunky rozsahu.
 
 <a id="excel-iv-49"></a>
 ## 49. Do While
 
-```vb
-Do While Cells(i, 1).Value <> ""
-    Cells(i, 2).Value = UCase(Cells(i, 1).Value)
-    i = i + 1
-Loop
-```
+Precvičíme cyklus s podmienkou na začiatku.
 
 <a id="excel-iv-50"></a>
 ## 50. Do Until a Exit Do
 
-```vb
-Do Until Cells(i, 1).Value = ""
-    If Cells(i, 1).Value = "STOP" Then Exit Do
-    i = i + 1
-Loop
-```
+Precvičíme ukončenie cyklu pri splnení podmienky.
 
 <a id="excel-iv-51"></a>
 ## 51. MsgBox a InputBox
 
-```vb
-meno = InputBox("Zadajte meno používateľa:")
-If meno <> "" Then MsgBox "Ahoj " & meno
-```
+Precvičíme komunikáciu s používateľom.
 
 <a id="excel-iv-52"></a>
 ## 52. Nahradenie textu
 
-Použijeme metódu `Replace` nad explicitne zadaným hárkom a rozsahom.
+Použijeme metódu `Replace`.
 
 <a id="excel-iv-53"></a>
 ## 53. Kopírovanie a prilepenie
 
-Pri kopírovaní iba hodnôt preferujeme priamy zápis medzi rozsahmi namiesto zbytočného používania schránky.
+Pri kopírovaní hodnôt preferujeme priamy zápis medzi rozsahmi.
 
 <a id="excel-iv-54"></a>
 ## 54. Vymazanie obsahu a riadkov
 
-```vb
-Range("A2:D100").ClearContents
-Rows(10).Delete
-```
+Použijeme `ClearContents`, `Clear` a `Delete`.
 
 <a id="excel-iv-55"></a>
 ## 55. Používateľská funkcia UDF
 
-```vb
-Function CenaSDPH(cenaBezDPH As Double, sadzbaDPH As Double) As Double
-    CenaSDPH = cenaBezDPH * (1 + sadzbaDPH)
-End Function
-```
+Vytvoríme vlastnú funkciu na výpočet ceny s DPH.
 
 <a id="excel-iv-56"></a>
 ## 56. Automatické vytvorenie prehľadu
 
-Zdrojový modul: [`06-automatizácia-prehľadu.bas`](vba-ukážky/06-automatizácia-prehľadu.bas)
-
-Makro pracuje s hárkom `Dáta`, vytvorí alebo vyčistí hárok `Prehľad`, skopíruje aktuálny rozsah a prispôsobí šírku stĺpcov.
+Zdroj: [`06-automatizacia-prehladu.bas`](vba-ukazky/06-automatizacia-prehladu.bas)
 
 <a id="excel-iv-57"></a>
 ## 57. Optimalizácia VBA kódu
 
-Pri väčších operáciách môžeme dočasne vypnúť prekresľovanie obrazovky, udalosti a automatický prepočet. Na konci ich vždy obnovíme aj pri vzniku chyby.
+Použijeme `ScreenUpdating`, `EnableEvents` a `Calculation`.
 
 <a id="excel-iv-58"></a>
 ## 58. Ovládacie tlačidlo
 
-Vložíme tlačidlo formulára cez kartu Vývojár a priradíme mu makro na vytvorenie prehľadu.
-
-<a id="excel-tahak"></a>
-# 🧠 Excel ťahák
-
-## Najčastejšie klávesové skratky
-
-| Akcia | Skratka |
-|---|---|
-| Uložiť zošit | `Ctrl + S` |
-| Kopírovať | `Ctrl + C` |
-| Vystrihnúť | `Ctrl + X` |
-| Prilepiť | `Ctrl + V` |
-| Späť | `Ctrl + Z` |
-| Upraviť bunku | `F2` |
-| Prepnúť typ odkazu vo vzorci | `F4` |
-| Prejsť na | `Ctrl + G` alebo `F5` |
-| Vytvoriť tabuľku | `Ctrl + T` |
-| Zapnúť alebo vypnúť filter | `Ctrl + Shift + L` |
-| Nový riadok v bunke | `Alt + Enter` |
-
-## Základné funkcie
-
-| Úloha | Funkcia |
-|---|---|
-| Súčet | `SUM` |
-| Priemer | `AVERAGE` |
-| Minimum | `MIN` |
-| Maximum | `MAX` |
-| Počet čísel | `COUNT` |
-| Logická podmienka | `IF` |
-| Ošetrenie chyby | `IFERROR` |
-| Vyhľadanie | `VLOOKUP`, `HLOOKUP`, `XLOOKUP` |
-| Pozícia hodnoty | `MATCH` |
-| Hodnota podľa pozície | `INDEX` |
-| Súčet súčinov | `SUMPRODUCT` |
-| Unikátne hodnoty | `UNIQUE` |
-| Dnešný dátum | `TODAY` |
-| Dátum a čas | `NOW` |
+Priradíme makro tlačidlu formulára.
 
 <a id="prakticke-projekty"></a>
 # 🧪 Praktické projekty
 
-1. [Faktúra](projekty/faktúra/zadanie.md) – DPH, medzisúčty, formátovanie a tlač
-2. [Dochádzka](projekty/dochádzka/zadanie.md) – dátumy, časy, prestávky a odpracované hodiny
-3. [Firemný rozpočet](projekty/rozpočet/zadanie.md) – rozpočet, skutočnosť, odchýlka a Hľadanie riešenia
-4. [Prehľad predaja](projekty/prehľad-predaja/zadanie.md) – filtre, vyhľadávacie funkcie, grafy a kontingenčná tabuľka
-5. [Absencie zamestnancov](projekty/absencie-zamestnancov/zadanie.md) – personálne dáta, dátumy, súhrny a kontingenčné tabuľky
+1. [Faktúra](projekty/faktura/zadanie.md)
+2. [Dochádzka](projekty/dochadzka/zadanie.md)
+3. [Firemný rozpočet](projekty/rozpocet/zadanie.md)
+4. [Prehľad predaja](projekty/prehlad-predaja/zadanie.md)
+5. [Absencie zamestnancov](projekty/absencie-zamestnancov/zadanie.md)
 
-<a id="caste-chyby"></a>
-# ⚠️ Časté chyby
-
-## Číslo uložené ako text
-
-Overíme:
-
-```excel
-=ISNUMBER(A2)
-```
-
-## Nesprávne fixovaný rozsah
-
-Menej vhodné:
-
-```excel
-=VLOOKUP(A2,H2:J100,3,FALSE)
-```
-
-Vhodné pri kopírovaní vzorca:
-
-```excel
-=VLOOKUP(A2,$H$2:$J$100,3,FALSE)
-```
-
-## Zlúčené bunky v dátovej tabuľke
-
-Zlúčené bunky v dátových oblastiach komplikujú filtrovanie, triedenie, importy aj automatizáciu.
-
-## Hodnoty zapísané priamo vo vzorcoch
-
-Menej vhodné:
-
-```excel
-=A2*1.23
-```
-
-Lepšie:
-
-```excel
-=A2*(1+$F$1)
-```
-
-## VBA zošit uložený ako XLSX
-
-Zošit s VBA ukladáme ako `Excel Macro-Enabled Workbook (*.xlsm)`.
-
-<a id="bezpecnost"></a>
 # 🔒 Bezpečnostné poznámky
 
-1. nespúšťame makrá z neznámych alebo nedôveryhodných zdrojov
-2. pred spustením makra skontrolujeme zdrojový kód
-3. produkčné dáta nahrádzame anonymizovanými tréningovými dátami
-4. do repozitára neukladáme heslá, API tokeny, osobné údaje ani dôverné firemné exporty
-5. makrá zapisujúce alebo odstraňujúce dáta testujeme najprv na kópii zošita
-6. pri automatizácii používame explicitné názvy zošitov, hárkov a rozsahov
-
-# 📚 Užitočné odkazy
-
-1. [Microsoft Excel I. Začiatočník](https://www.vita.sk/online-kurz-microsoft-excel-i-zaciatocnik/)
-2. [Microsoft Excel II. Mierne Pokročilý](https://www.vita.sk/online-kurz-microsoft-excel-ii-mierne-pokrocily/)
-3. [Microsoft Excel III. Pokročilý](https://www.vita.sk/online-kurz-microsoft-excel-iii-pokrocily/)
-4. [Microsoft Excel IV. Expert: Programovanie vo VBA](https://www.vita.sk/online-kurz-microsoft-excel-iv-expert-programovanie-vo-vba/)
-5. [Excel specifications and limits](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits)
-6. [Klávesové skratky v Exceli](https://support.microsoft.com/sk-sk/accessibility/excel/keyboard-shortcuts-in-excel)
-7. [VBA Range object](https://learn.microsoft.com/sk-sk/office/vba/api/excel.range(object))
-
-# ✅ Cieľ repozitára
-
-Po prejdení príkladov by sme mali vedieť:
-
-1. samostatne vytvárať a upravovať Excel zošity
-2. efektívne pracovať s bunkami, rozsahmi a tabuľkami
-3. filtrovať, triediť a formátovať dáta
-4. používať vzorce, funkcie a rôzne typy odkazov
-5. vytvárať grafy a tlačové prehľady
-6. analyzovať väčšie dátové súbory
-7. používať vyhľadávacie funkcie a `SUMPRODUCT`
-8. vytvárať a analyzovať kontingenčné tabuľky
-9. importovať CSV a ďalšie dátové formáty
-10. nahrávať a upravovať makrá
-11. programovať praktické VBA procedúry
-12. automatizovať opakované úlohy v Microsoft Exceli
+1. Nespúšťame makrá z nedôveryhodných zdrojov
+2. Pred spustením makra skontrolujeme zdrojový kód
+3. Produkčné dáta nahrádzame anonymizovanými tréningovými dátami
+4. Do repozitára neukladáme heslá, API tokeny ani dôverné firemné exporty
+5. Makrá zapisujúce alebo odstraňujúce dáta testujeme na kópii zošita

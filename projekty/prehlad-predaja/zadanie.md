@@ -6,7 +6,7 @@ Vytvoríme obchodný prehľad s vyhľadávaním údajov, súhrnmi, grafmi a kont
 
 ## Zdrojové dáta
 
-Použijeme `../../dáta/predaj.csv` a `../../dáta/produkty.csv`.
+Použijeme `../../data/predaj.csv` a `../../data/produkty.csv`.
 
 ## Požiadavky
 
