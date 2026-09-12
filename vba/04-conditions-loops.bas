@@ -1,66 +1,66 @@
-Attribute VB_Name = "ConditionsLoops"
+﻿Attribute VB_Name = "PodmienkyCykly"
 Option Explicit
 
-Public Sub CheckRevenue()
-    Dim ws As Worksheet
-    Dim lastRow As Long
+Public Sub SkontrolujTrzbu()
+    Dim harok As Worksheet
+    Dim poslednyRiadok As Long
     Dim i As Long
-    Dim revenue As Double
+    Dim trzba As Double
 
-    Set ws = ThisWorkbook.Worksheets("Data")
-    lastRow = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
+    Set harok = ThisWorkbook.Worksheets("Dáta")
+    poslednyRiadok = harok.Cells(harok.Rows.Count, 1).End(xlUp).Row
 
-    ws.Cells(1, 8).Value = "Status"
+    harok.Cells(1, 8).Value = "Hodnotenie"
 
-    For i = 2 To lastRow
-        revenue = CDbl(ws.Cells(i, 5).Value) * CDbl(ws.Cells(i, 6).Value)
+    For i = 2 To poslednyRiadok
+        trzba = CDbl(harok.Cells(i, 5).Value) * CDbl(harok.Cells(i, 6).Value)
 
-        If revenue >= 1000 Then
-            ws.Cells(i, 8).Value = "Vysoká tržba"
-        ElseIf revenue >= 500 Then
-            ws.Cells(i, 8).Value = "Stredná tržba"
+        If trzba >= 1000 Then
+            harok.Cells(i, 8).Value = "Vysoká tržba"
+        ElseIf trzba >= 500 Then
+            harok.Cells(i, 8).Value = "Stredná tržba"
         Else
-            ws.Cells(i, 8).Value = "Nízka tržba"
+            harok.Cells(i, 8).Value = "Nízka tržba"
         End If
     Next i
 End Sub
 
-Public Sub NumberRows()
-    Dim ws As Worksheet
-    Dim lastRow As Long
+Public Sub OcislovanieRiadkov()
+    Dim harok As Worksheet
+    Dim poslednyRiadok As Long
     Dim i As Long
 
-    Set ws = ThisWorkbook.Worksheets("Data")
-    lastRow = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
-    ws.Cells(1, 9).Value = "RowNo"
+    Set harok = ThisWorkbook.Worksheets("Dáta")
+    poslednyRiadok = harok.Cells(harok.Rows.Count, 1).End(xlUp).Row
+    harok.Cells(1, 9).Value = "Číslo riadka"
 
-    For i = 2 To lastRow
-        ws.Cells(i, 9).Value = i - 1
+    For i = 2 To poslednyRiadok
+        harok.Cells(i, 9).Value = i - 1
     Next i
 End Sub
 
-Public Sub HighlightNegativeValues()
-    Dim cell As Range
+Public Sub ZvyrazniZaporneHodnoty()
+    Dim bunka As Range
 
-    For Each cell In ThisWorkbook.Worksheets("Report").Range("F2:F500")
-        If IsNumeric(cell.Value) And cell.Value < 0 Then
-            cell.Font.Bold = True
-            cell.Font.Color = vbRed
+    For Each bunka In ThisWorkbook.Worksheets("Prehľad").Range("F2:F500")
+        If IsNumeric(bunka.Value) And bunka.Value < 0 Then
+            bunka.Font.Bold = True
+            bunka.Font.Color = vbRed
         End If
-    Next cell
+    Next bunka
 End Sub
 
-Public Sub ProcessUntilBlank()
-    Dim ws As Worksheet
+Public Sub SpracujPoPrazdnyRiadok()
+    Dim harok As Worksheet
     Dim i As Long
 
-    Set ws = ThisWorkbook.Worksheets("Data")
+    Set harok = ThisWorkbook.Worksheets("Dáta")
     i = 2
 
-    Do While ws.Cells(i, 1).Value <> ""
-        ws.Cells(i, 10).Value = UCase$(CStr(ws.Cells(i, 2).Value))
+    Do While harok.Cells(i, 1).Value <> ""
+        harok.Cells(i, 10).Value = UCase$(CStr(harok.Cells(i, 2).Value))
         i = i + 1
     Loop
 
-    ws.Cells(1, 10).Value = "RegionUpper"
+    harok.Cells(1, 10).Value = "Región veľkými písmenami"
 End Sub

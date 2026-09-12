@@ -1,10 +1,10 @@
-Attribute VB_Name = "FirstMacro"
+﻿Attribute VB_Name = "PrveMakro"
 Option Explicit
 
-Public Sub HelloExcel()
-    MsgBox "Ahoj Excel!", vbInformation, "excel-lab"
+Public Sub AhojExcel()
+    MsgBox "Ahoj, Excel!", vbInformation, "excel-lab"
 End Sub
 
-Public Sub WriteCourseName()
-    ThisWorkbook.Worksheets("VBA Guide").Range("B2").Value = "Microsoft Excel IV. Expert - VBA"
+Public Sub ZapisNazovKurzu()
+    ThisWorkbook.Worksheets("Sprievodca VBA").Range("B2").Value = "Microsoft Excel IV. Expert - Programovanie vo VBA"
 End Sub

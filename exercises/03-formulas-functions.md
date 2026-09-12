@@ -11,15 +11,15 @@ Použijeme `data/invoices.csv`.
 ## Zadania
 
 1. Importujeme faktúry do Excelu
-2. Vytvoríme stĺpec `NetAmount`
-3. Vypočítame `NetAmount` ako množstvo krát jednotková cena
-4. Vytvoríme stĺpec `VATAmount`
+2. Vytvoríme stĺpec `Suma bez DPH`
+3. Sumu bez DPH vypočítame ako množstvo krát jednotková cena
+4. Vytvoríme stĺpec `Suma DPH`
 5. Vypočítame DPH pomocou sadzby v samostatnej bunke s absolútnym odkazom
-6. Vytvoríme stĺpec `GrossAmount`
+6. Vytvoríme stĺpec `Suma s DPH`
 7. Vypočítame celkovú hodnotu faktúr
 8. Vypočítame priemernú hodnotu faktúry
-9. Zistíme počet faktúr so stavom `Paid` pomocou `COUNTIF`
-10. Zistíme sumu otvorených faktúr pomocou `SUMIF`
+9. Zistíme počet faktúr so stavom `Uhradená` pomocou funkcie `COUNTIF`
+10. Zistíme sumu otvorených faktúr pomocou funkcie `SUMIF`
 
 ## Kontrola
 

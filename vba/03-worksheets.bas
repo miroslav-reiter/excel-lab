@@ -1,31 +1,31 @@
-Attribute VB_Name = "WorksheetTools"
+﻿Attribute VB_Name = "NastrojeHarkov"
 Option Explicit
 
-Public Function GetOrCreateWorksheet(ByVal worksheetName As String) As Worksheet
-    Dim ws As Worksheet
+Public Function ZiskajAleboVytvorHarok(ByVal nazovHarka As String) As Worksheet
+    Dim harok As Worksheet
 
     On Error Resume Next
-    Set ws = ThisWorkbook.Worksheets(worksheetName)
+    Set harok = ThisWorkbook.Worksheets(nazovHarka)
     On Error GoTo 0
 
-    If ws Is Nothing Then
-        Set ws = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count))
-        ws.Name = worksheetName
+    If harok Is Nothing Then
+        Set harok = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count))
+        harok.Name = nazovHarka
     End If
 
-    Set GetOrCreateWorksheet = ws
+    Set ZiskajAleboVytvorHarok = harok
 End Function
 
-Public Sub CreateReportSheet()
-    Dim ws As Worksheet
-    Set ws = GetOrCreateWorksheet("Report")
+Public Sub VytvorHarokPrehlad()
+    Dim harok As Worksheet
+    Set harok = ZiskajAleboVytvorHarok("Prehľad")
 
-    ws.Cells.Clear
-    ws.Range("A1").Value = "Sales Report"
-    ws.Range("A1").Font.Bold = True
-    ws.Columns.AutoFit
+    harok.Cells.Clear
+    harok.Range("A1").Value = "Prehľad predaja"
+    harok.Range("A1").Font.Bold = True
+    harok.Columns.AutoFit
 End Sub
 
-Public Sub CountWorksheets()
+Public Sub SpocitajHarky()
     MsgBox "Počet hárkov: " & ThisWorkbook.Worksheets.Count, vbInformation, "excel-lab"
 End Sub

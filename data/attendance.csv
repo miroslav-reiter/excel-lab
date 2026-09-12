@@ -1,16 +1,16 @@
-Date,EmployeeID,Employee,Arrival,Departure,BreakHours,WorkMode
-2026-09-01,1001,Anna Nováková,08:02,16:31,0.5,Office
-2026-09-01,1002,Peter Horváth,07:48,16:10,0.5,Office
-2026-09-01,1003,Lucia Kováčová,08:15,16:42,0.5,Remote
-2026-09-01,1004,Martin Varga,08:06,17:01,0.5,Office
-2026-09-02,1001,Anna Nováková,07:59,16:29,0.5,Office
-2026-09-02,1002,Peter Horváth,08:10,16:36,0.5,Remote
-2026-09-02,1003,Lucia Kováčová,08:04,16:20,0.5,Office
-2026-09-02,1004,Martin Varga,07:55,16:51,0.5,Office
-2026-09-03,1001,Anna Nováková,08:20,16:45,0.5,Remote
-2026-09-03,1002,Peter Horváth,07:50,16:18,0.5,Office
-2026-09-03,1003,Lucia Kováčová,08:12,16:38,0.5,Office
-2026-09-03,1004,Martin Varga,08:00,16:55,0.5,Remote
-2026-09-04,1005,Eva Balážová,08:03,16:22,0.5,Office
-2026-09-04,1006,Tomáš Nagy,07:45,16:12,0.5,Office
-2026-09-04,1007,Zuzana Molnárová,08:07,16:33,0.5,Remote
+Dátum;ID zamestnanca;Zamestnanec;Príchod;Odchod;Prestávka v hodinách;Režim práce
+2026-09-01;1001;Anna Nováková;08:02;16:31;0,5;Kancelária
+2026-09-01;1002;Peter Horváth;07:48;16:10;0,5;Kancelária
+2026-09-01;1003;Lucia Kováčová;08:15;16:42;0,5;Na diaľku
+2026-09-01;1004;Martin Varga;08:06;17:01;0,5;Kancelária
+2026-09-02;1001;Anna Nováková;07:59;16:29;0,5;Kancelária
+2026-09-02;1002;Peter Horváth;08:10;16:36;0,5;Na diaľku
+2026-09-02;1003;Lucia Kováčová;08:04;16:20;0,5;Kancelária
+2026-09-02;1004;Martin Varga;07:55;16:51;0,5;Kancelária
+2026-09-03;1001;Anna Nováková;08:20;16:45;0,5;Na diaľku
+2026-09-03;1002;Peter Horváth;07:50;16:18;0,5;Kancelária
+2026-09-03;1003;Lucia Kováčová;08:12;16:38;0,5;Kancelária
+2026-09-03;1004;Martin Varga;08:00;16:55;0,5;Na diaľku
+2026-09-04;1005;Eva Balážová;08:03;16:22;0,5;Kancelária
+2026-09-04;1006;Tomáš Nagy;07:45;16:12;0,5;Kancelária
+2026-09-04;1007;Zuzana Molnárová;08:07;16:33;0,5;Na diaľku

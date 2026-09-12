@@ -1,8 +1,8 @@
-# Projekt – Sales Report
+# Projekt – Prehľad predaja
 
 ## Cieľ
 
-Vytvoríme obchodný report s lookupmi, súhrnmi, grafmi a kontingenčnou tabuľkou.
+Vytvoríme obchodný prehľad s vyhľadávaním údajov, súhrnmi, grafmi a kontingenčnou tabuľkou.
 
 ## Zdrojové dáta
 
@@ -10,8 +10,8 @@ Použijeme `../../data/sales.csv` a `../../data/products.csv`.
 
 ## Požiadavky
 
-1. Doplníme názov produktu podľa `ProductCode`
-2. Vypočítame `Revenue`
+1. Doplníme názov produktu podľa poľa `Kód produktu`
+2. Vypočítame stĺpec `Tržba`
 3. Vytvoríme mesačný súhrn tržieb
 4. Vytvoríme súhrn podľa regiónu
 5. Vytvoríme súhrn podľa produktu
@@ -19,6 +19,6 @@ Použijeme `../../data/sales.csv` a `../../data/products.csv`.
 7. Pridáme filter podľa produktu
 8. Vytvoríme stĺpcový graf tržieb podľa regiónu
 9. Vytvoríme čiarový graf mesačného trendu
-10. Ošetríme neexistujúce lookup hodnoty
+10. Ošetríme neexistujúce hodnoty pri vyhľadávaní
 11. Nastavíme jednotný formát meny
-12. Pripravíme finálny manažérsky dashboard
+12. Pripravíme finálny manažérsky prehľad

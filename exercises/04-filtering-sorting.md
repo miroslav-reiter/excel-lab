@@ -16,7 +16,7 @@ Použijeme `data/sales.csv`.
 4. Zoradíme množstvo zostupne
 5. Vytvoríme viacúrovňové zoradenie podľa regiónu a následne podľa predajcu
 6. Vyfiltrujeme predaje od marca do júna 2026
-7. Skopírujeme iba viditeľné riadky do nového hárka `Filtered`
+7. Skopírujeme iba viditeľné riadky do nového hárka `Filtrované`
 8. Obnovíme pôvodné zobrazenie bez odstránenia dát
 
 ## Kontrola

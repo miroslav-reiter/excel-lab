@@ -1,8 +1,8 @@
-# Cvičenie 08 – VBA automatizácia
+# Cvičenie 08 – Automatizácia pomocou VBA
 
 ## Cieľ
 
-Precvičíme makrá, objektový model Excelu, podmienky, cykly, UDF a automatické vytvorenie reportu.
+Precvičíme makrá, objektový model Excelu, podmienky, cykly, používateľské funkcie a automatické vytvorenie prehľadu.
 
 ## Súbory
 
@@ -10,17 +10,17 @@ Použijeme `solutions/excel-04-vba.xlsm` a moduly z priečinka `vba/`.
 
 ## Zadania
 
-1. Otvoríme `excel-04-vba.xlsm` v desktopovom Exceli
-2. Aktivujeme kartu Developer
-3. Otvoríme VBA Editor pomocou `Alt + F11`
+1. Otvoríme `excel-04-vba.xlsm` v desktopovej aplikácii Excel
+2. Aktivujeme kartu Vývojár
+3. Otvoríme editor jazyka VBA pomocou `Alt + F11`
 4. Importujeme modul `01-first-macro.bas`
-5. Spustíme procedúru `HelloExcel`
-6. Importujeme `02-range-cells.bas` a otestujeme prácu s `Range` a `Cells`
-7. Importujeme `03-worksheets.bas` a vytvoríme hárok `Report`
+5. Spustíme procedúru `AhojExcel`
+6. Importujeme `02-range-cells.bas` a otestujeme prácu s objektmi `Range` a `Cells`
+7. Importujeme `03-worksheets.bas` a vytvoríme hárok `Prehľad`
 8. Importujeme `04-conditions-loops.bas` a spustíme príklady podmienok a cyklov
 9. Importujeme `05-udf.bas` a použijeme vlastnú funkciu v bunke
-10. Importujeme `06-report-automation.bas` a vygenerujeme report z hárka `Data`
-11. Priradíme makro `CreateSalesReport` tlačidlu formulára
+10. Importujeme `06-report-automation.bas` a vygenerujeme prehľad z hárka `Dáta`
+11. Priradíme makro `VytvorPrehladPredaja` tlačidlu formulára
 12. Uložíme zošit ako `.xlsm`
 
 ## Bezpečnosť
@@ -32,6 +32,6 @@ Použijeme `solutions/excel-04-vba.xlsm` a moduly z priečinka `vba/`.
 
 ## Kontrola
 
-1. VBE nesmie hlásiť compile error
-2. Report sa musí vytvoriť opakovane bez vytvárania duplicitných hárkov
+1. Editor VBA nesmie hlásiť chybu pri kompilácii
+2. Prehľad sa musí vytvoriť opakovane bez vytvárania duplicitných hárkov
 3. Po skončení makra musia byť obnovené nastavenia `ScreenUpdating`, `EnableEvents` a `Calculation`

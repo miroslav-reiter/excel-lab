@@ -1,53 +1,53 @@
-Attribute VB_Name = "ReportAutomation"
+﻿Attribute VB_Name = "AutomatizaciaPrehladu"
 Option Explicit
 
-Public Sub CreateSalesReport()
-    Dim wsData As Worksheet
-    Dim wsReport As Worksheet
-    Dim lastRow As Long
-    Dim oldCalculation As XlCalculation
-    Dim oldScreenUpdating As Boolean
-    Dim oldEnableEvents As Boolean
+Public Sub VytvorPrehladPredaja()
+    Dim harokData As Worksheet
+    Dim harokPrehlad As Worksheet
+    Dim poslednyRiadok As Long
+    Dim povodnyVypocet As XlCalculation
+    Dim povodnePrekreslovanie As Boolean
+    Dim povodneUdalosti As Boolean
 
-    On Error GoTo CleanFail
+    On Error GoTo Chyba
 
-    oldCalculation = Application.Calculation
-    oldScreenUpdating = Application.ScreenUpdating
-    oldEnableEvents = Application.EnableEvents
+    povodnyVypocet = Application.Calculation
+    povodnePrekreslovanie = Application.ScreenUpdating
+    povodneUdalosti = Application.EnableEvents
 
     Application.ScreenUpdating = False
     Application.EnableEvents = False
     Application.Calculation = xlCalculationManual
 
-    Set wsData = ThisWorkbook.Worksheets("Data")
-    Set wsReport = GetOrCreateWorksheet("Report")
+    Set harokData = ThisWorkbook.Worksheets("Dáta")
+    Set harokPrehlad = ZiskajAleboVytvorHarok("Prehľad")
 
-    wsReport.Cells.Clear
-    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+    harokPrehlad.Cells.Clear
+    poslednyRiadok = harokData.Cells(harokData.Rows.Count, 1).End(xlUp).Row
 
-    wsData.Range("A1:F" & lastRow).Copy Destination:=wsReport.Range("A1")
+    harokData.Range("A1:F" & poslednyRiadok).Copy Destination:=harokPrehlad.Range("A1")
 
-    wsReport.Range("G1").Value = "Revenue"
-    wsReport.Range("G2:G" & lastRow).FormulaR1C1 = "=RC[-2]*RC[-1]"
-    wsReport.Range("G2:G" & lastRow).NumberFormat = "#,##0.00 [$€-sk-SK]"
+    harokPrehlad.Range("G1").Value = "Tržba"
+    harokPrehlad.Range("G2:G" & poslednyRiadok).FormulaR1C1 = "=RC[-2]*RC[-1]"
+    harokPrehlad.Range("G2:G" & poslednyRiadok).NumberFormat = "#,##0.00 [$€-sk-SK]"
 
-    wsReport.Range("A1:G1").Font.Bold = True
-    wsReport.Range("A1:G1").AutoFilter
-    wsReport.Columns("A:G").AutoFit
+    harokPrehlad.Range("A1:G1").Font.Bold = True
+    harokPrehlad.Range("A1:G1").AutoFilter
+    harokPrehlad.Columns("A:G").AutoFit
 
-    wsReport.Range("I1").Value = "Total Revenue"
-    wsReport.Range("I2").Formula = "=SUM(G2:G" & lastRow & ")"
-    wsReport.Range("I2").NumberFormat = "#,##0.00 [$€-sk-SK]"
+    harokPrehlad.Range("I1").Value = "Celková tržba"
+    harokPrehlad.Range("I2").Formula = "=SUM(G2:G" & poslednyRiadok & ")"
+    harokPrehlad.Range("I2").NumberFormat = "#,##0.00 [$€-sk-SK]"
 
-    MsgBox "Report bol vytvorený.", vbInformation, "excel-lab"
+    MsgBox "Prehľad bol vytvorený.", vbInformation, "excel-lab"
 
-CleanExit:
-    Application.Calculation = oldCalculation
-    Application.EnableEvents = oldEnableEvents
-    Application.ScreenUpdating = oldScreenUpdating
+Koniec:
+    Application.Calculation = povodnyVypocet
+    Application.EnableEvents = povodneUdalosti
+    Application.ScreenUpdating = povodnePrekreslovanie
     Exit Sub
 
-CleanFail:
+Chyba:
     MsgBox "Chyba " & Err.Number & ": " & Err.Description, vbExclamation, "excel-lab"
-    Resume CleanExit
+    Resume Koniec
 End Sub

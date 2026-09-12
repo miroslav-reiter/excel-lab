@@ -1,18 +1,18 @@
-Attribute VB_Name = "UserFunctions"
+﻿Attribute VB_Name = "PouzivatelskeFunkcie"
 Option Explicit
 
-Public Function PriceWithVAT(ByVal priceWithoutVAT As Double, ByVal vatRate As Double) As Double
-    PriceWithVAT = priceWithoutVAT * (1 + vatRate)
+Public Function CenaSDPH(ByVal cenaBezDPH As Double, ByVal sadzbaDPH As Double) As Double
+    CenaSDPH = cenaBezDPH * (1 + sadzbaDPH)
 End Function
 
-Public Function SafePercent(ByVal numerator As Double, ByVal denominator As Double) As Variant
-    If denominator = 0 Then
-        SafePercent = CVErr(xlErrDiv0)
+Public Function BezpecnePercento(ByVal citatel As Double, ByVal menovatel As Double) As Variant
+    If menovatel = 0 Then
+        BezpecnePercento = CVErr(xlErrDiv0)
     Else
-        SafePercent = numerator / denominator
+        BezpecnePercento = citatel / menovatel
     End If
 End Function
 
-Public Function Revenue(ByVal unitPrice As Double, ByVal quantity As Double) As Double
-    Revenue = unitPrice * quantity
+Public Function Trzba(ByVal jednotkovaCena As Double, ByVal mnozstvo As Double) As Double
+    Trzba = jednotkovaCena * mnozstvo
 End Function

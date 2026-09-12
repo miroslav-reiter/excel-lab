@@ -1,16 +1,16 @@
-ProductCode,Product,Category,PriceEUR
-P001,Notebook Pro 14,Notebooky,899.0
-P002,Notebook Business 15,Notebooky,1099.0
-P003,Monitor 27 QHD,Monitory,289.0
-P004,Monitor 24 FHD,Monitory,169.0
-P005,Klávesnica Wireless,Príslušenstvo,49.9
-P006,Myš Ergonomic,Príslušenstvo,39.9
-P007,USB-C Dock,Príslušenstvo,129.0
-P008,Webkamera 4K,Príslušenstvo,119.0
-P009,Headset Office,Príslušenstvo,79.0
-P010,SSD 1 TB,Komponenty,94.0
-P011,RAM 32 GB,Komponenty,109.0
-P012,Router Wi-Fi 6,Sieťové prvky,149.0
-P013,Switch 24-port,Sieťové prvky,219.0
-P014,UPS 1500 VA,Napájanie,249.0
-P015,Office Chair,Kancelária,329.0
+Kód produktu;Produkt;Kategória;Cena EUR
+P001;Notebook Pro 14;Notebooky;899,00
+P002;Firemný notebook 15;Notebooky;1099,00
+P003;Monitor 27 QHD;Monitory;289,00
+P004;Monitor 24 FHD;Monitory;169,00
+P005;Bezdrôtová klávesnica;Príslušenstvo;49,90
+P006;Ergonomická myš;Príslušenstvo;39,90
+P007;Dokovacia stanica USB-C;Príslušenstvo;129,00
+P008;Webkamera 4K;Príslušenstvo;119,00
+P009;Kancelársky headset;Príslušenstvo;79,00
+P010;SSD 1 TB;Komponenty;94,00
+P011;RAM 32 GB;Komponenty;109,00
+P012;Router Wi-Fi 6;Sieťové prvky;149,00
+P013;24-portový switch;Sieťové prvky;219,00
+P014;UPS 1500 VA;Napájanie;249,00
+P015;Kancelárska stolička;Kancelária;329,00

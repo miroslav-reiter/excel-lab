@@ -1,27 +1,27 @@
-Attribute VB_Name = "RangeCells"
+﻿Attribute VB_Name = "RozsahyBunky"
 Option Explicit
 
-Public Sub WriteToRange()
-    Dim ws As Worksheet
-    Set ws = ThisWorkbook.Worksheets("Data")
+Public Sub ZapisDoRozsahu()
+    Dim harok As Worksheet
+    Set harok = ThisWorkbook.Worksheets("Dáta")
 
-    ws.Range("H1").Value = "Poznámka"
-    ws.Range("H2").Value = "Zapísané cez Range"
+    harok.Range("H1").Value = "Poznámka"
+    harok.Range("H2").Value = "Zapísané pomocou objektu Range"
 End Sub
 
-Public Sub FillWithCells()
-    Dim ws As Worksheet
+Public Sub VyplnPomocouBuniek()
+    Dim harok As Worksheet
     Dim i As Long
 
-    Set ws = ThisWorkbook.Worksheets("Data")
+    Set harok = ThisWorkbook.Worksheets("Dáta")
 
     For i = 2 To 11
-        ws.Cells(i, 9).Value = i - 1
+        harok.Cells(i, 9).Value = i - 1
     Next i
 
-    ws.Cells(1, 9).Value = "Poradie"
+    harok.Cells(1, 9).Value = "Poradie"
 End Sub
 
-Public Function LastUsedRow(ByVal ws As Worksheet, Optional ByVal columnNumber As Long = 1) As Long
-    LastUsedRow = ws.Cells(ws.Rows.Count, columnNumber).End(xlUp).Row
+Public Function PoslednyPouzityRiadok(ByVal harok As Worksheet, Optional ByVal cisloStlpca As Long = 1) As Long
+    PoslednyPouzityRiadok = harok.Cells(harok.Rows.Count, cisloStlpca).End(xlUp).Row
 End Function
