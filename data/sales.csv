@@ -1,0 +1,25 @@
+Date,Region,Salesperson,ProductCode,Quantity,UnitPriceEUR
+2026-01-05,Bratislava,Anna Nováková,P001,2,899.0
+2026-01-08,Košice,Peter Horváth,P003,5,289.0
+2026-01-15,Trnava,Lucia Kováčová,P005,12,49.9
+2026-01-22,Žilina,Martin Varga,P002,1,1099.0
+2026-02-03,Bratislava,Jakub Šimko,P007,7,129.0
+2026-02-09,Nitra,Tomáš Nagy,P010,10,94.0
+2026-02-17,Prešov,Zuzana Molnárová,P006,15,39.9
+2026-02-25,Košice,Katarína Urbanová,P004,6,169.0
+2026-03-02,Bratislava,Michal Bartoš,P011,8,109.0
+2026-03-12,Banská Bystrica,Richard Tóth,P012,4,149.0
+2026-03-19,Trenčín,Veronika Poláková,P013,2,219.0
+2026-03-29,Bratislava,Martin Varga,P001,3,899.0
+2026-04-04,Košice,Peter Horváth,P009,9,79.0
+2026-04-11,Bratislava,Jakub Šimko,P003,4,289.0
+2026-04-21,Trnava,Lucia Kováčová,P008,3,119.0
+2026-05-06,Žilina,Martin Varga,P014,2,249.0
+2026-05-14,Nitra,Tomáš Nagy,P010,14,94.0
+2026-05-23,Bratislava,Anna Nováková,P015,2,329.0
+2026-06-03,Prešov,Zuzana Molnárová,P002,2,1099.0
+2026-06-10,Košice,Katarína Urbanová,P005,20,49.9
+2026-06-18,Bratislava,Michal Bartoš,P007,6,129.0
+2026-07-01,Banská Bystrica,Richard Tóth,P013,3,219.0
+2026-07-13,Trenčín,Veronika Poláková,P004,10,169.0
+2026-07-27,Bratislava,Jakub Šimko,P001,1,899.0

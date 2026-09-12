@@ -1,0 +1,16 @@
+ProductCode,Product,Category,PriceEUR,VATRate,StockQty
+P001,Notebook Pro 14,Notebooky,899.0,0.23,45
+P002,Notebook Business 15,Notebooky,1099.0,0.23,28
+P003,Monitor 27 QHD,Monitory,289.0,0.23,75
+P004,Monitor 24 FHD,Monitory,169.0,0.23,96
+P005,Klávesnica Wireless,Príslušenstvo,49.9,0.23,180
+P006,Myš Ergonomic,Príslušenstvo,39.9,0.23,210
+P007,USB-C Dock,Príslušenstvo,129.0,0.23,62
+P008,Webkamera 4K,Príslušenstvo,119.0,0.23,54
+P009,Headset Office,Príslušenstvo,79.0,0.23,88
+P010,SSD 1 TB,Komponenty,94.0,0.23,130
+P011,RAM 32 GB,Komponenty,109.0,0.23,115
+P012,Router Wi-Fi 6,Sieťové prvky,149.0,0.23,43
+P013,Switch 24-port,Sieťové prvky,219.0,0.23,31
+P014,UPS 1500 VA,Napájanie,249.0,0.23,22
+P015,Office Chair,Kancelária,329.0,0.23,17

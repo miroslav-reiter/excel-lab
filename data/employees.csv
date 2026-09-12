@@ -1,0 +1,13 @@
+EmployeeID,Name,Department,City,Position,SalaryEUR,HireDate,Email
+1001,Anna Nováková,Finance,Bratislava,Senior Analyst,2350,2021-02-15,anna.novakova@example.com
+1002,Peter Horváth,IT,Košice,Developer,2600,2020-09-01,peter.horvath@example.com
+1003,Lucia Kováčová,Marketing,Trnava,Marketing Specialist,2050,2022-05-10,lucia.kovacova@example.com
+1004,Martin Varga,Sales,Žilina,Account Manager,2200,2019-11-18,martin.varga@example.com
+1005,Eva Balážová,HR,Bratislava,HR Specialist,1950,2023-01-09,eva.balazova@example.com
+1006,Tomáš Nagy,IT,Nitra,System Administrator,2450,2018-04-23,tomas.nagy@example.com
+1007,Zuzana Molnárová,Finance,Prešov,Controller,2500,2020-06-30,zuzana.molnarova@example.com
+1008,Jakub Šimko,Sales,Bratislava,Sales Representative,1900,2024-03-04,jakub.simko@example.com
+1009,Veronika Poláková,Operations,Trenčín,Process Specialist,2150,2022-08-16,veronika.polakova@example.com
+1010,Michal Bartoš,IT,Bratislava,Data Analyst,2400,2021-12-01,michal.bartos@example.com
+1011,Katarína Urbanová,Marketing,Košice,Content Specialist,1850,2024-01-22,katarina.urbanova@example.com
+1012,Richard Tóth,Operations,Banská Bystrica,Operations Manager,2850,2017-10-02,richard.toth@example.com
